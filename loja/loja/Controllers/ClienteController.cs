@@ -183,7 +183,6 @@ namespace loja.Controllers
 
                     // Execute o comando UPDATE
                     return command.ExecuteNonQuery();
-
                 }
             }
         }
