@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pedro Souza\\source\\repos\\tutorial-crud\\loja\\loja\\loja.csproj": {}
+    "C:\\Users\\Pedro Souza\\Source\\Repos\\tutorial-crud\\loja\\loja\\loja.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pedro Souza\\source\\repos\\tutorial-crud\\loja\\loja\\loja.csproj": {
+    "C:\\Users\\Pedro Souza\\Source\\Repos\\tutorial-crud\\loja\\loja\\loja.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pedro Souza\\source\\repos\\tutorial-crud\\loja\\loja\\loja.csproj",
+        "projectUniqueName": "C:\\Users\\Pedro Souza\\Source\\Repos\\tutorial-crud\\loja\\loja\\loja.csproj",
         "projectName": "loja",
-        "projectPath": "C:\\Users\\Pedro Souza\\source\\repos\\tutorial-crud\\loja\\loja\\loja.csproj",
+        "projectPath": "C:\\Users\\Pedro Souza\\Source\\Repos\\tutorial-crud\\loja\\loja\\loja.csproj",
         "packagesPath": "C:\\Users\\Pedro Souza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pedro Souza\\source\\repos\\tutorial-crud\\loja\\loja\\obj\\",
+        "outputPath": "C:\\Users\\Pedro Souza\\Source\\Repos\\tutorial-crud\\loja\\loja\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Pedro Souza\\AppData\\Roaming\\NuGet\\NuGet.Config",
