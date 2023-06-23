@@ -138,7 +138,6 @@ namespace loja.Controllers
 
                     // Execute o comando INSERT
                     return command.ExecuteNonQuery();
-
                 }
             }
         }
