@@ -227,3 +227,4 @@ AppPackages/
 loja/loja/obj/Debug/net6.0/loja.GeneratedMSBuildEditorConfig.editorconfig
 loja/loja/obj/Debug/net6.0/loja.assets.cache
 .vs/slnx.sqlite
+*.vsidx

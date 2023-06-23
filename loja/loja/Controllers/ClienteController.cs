@@ -137,12 +137,53 @@ namespace loja.Controllers
                     command.Parameters.AddWithValue("@Ativo", cliente.Ativo);
 
                     // Execute o comando INSERT
-                    int rowsAffected = command.ExecuteNonQuery();
-
+                    return command.ExecuteNonQuery();
                 }
             }
 
-            return true;
+        [HttpPut("AlterarCliente")]
+        public int AlterarCliente(Cliente cliente)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = "UPDATE Clientes SET Nome = @Nome, DataNascimento = @DataNascimento, Cpf = @Cpf, Ativo = @Ativo WHERE ClienteId = @ClienteId";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    // Defina os parâmetros e seus valores
+                    command.Parameters.AddWithValue("@Nome", cliente.Nome);
+                    command.Parameters.AddWithValue("@DataNascimento", cliente.DataNascimento);
+                    command.Parameters.AddWithValue("@Cpf", cliente.Cpf);
+                    command.Parameters.AddWithValue("@Ativo", cliente.Ativo);
+                    command.Parameters.AddWithValue("@ClienteId", cliente.ClienteId);
+
+                    // Execute o comando UPDATE
+                    return command.ExecuteNonQuery();
+
+                }
+            }
+        }
+
+        [HttpDelete("DeletarCliente/{clienteId}")]
+        public int DeletarCliente(int clienteId)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = "DELETE FROM Clientes WHERE ClienteId = @ClienteId";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    // Defina os parâmetros e seus valores
+                    command.Parameters.AddWithValue("@ClienteId", clienteId);
+
+                    // Execute o comando UPDATE
+                    return command.ExecuteNonQuery();
+                }
+            }
         }
     }
 }
