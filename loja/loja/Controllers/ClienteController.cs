@@ -120,7 +120,7 @@ namespace loja.Controllers
         }
 
         [HttpPost("CadastrarCliente")]
-        public bool CadastrarCliente(Cliente cliente)
+        public int CadastrarCliente(Cliente cliente)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -140,6 +140,7 @@ namespace loja.Controllers
                     return command.ExecuteNonQuery();
                 }
             }
+        }
 
         [HttpPut("AlterarCliente")]
         public int AlterarCliente(Cliente cliente)

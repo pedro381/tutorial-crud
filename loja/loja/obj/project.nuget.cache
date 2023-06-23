@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lQM/XWpNQ3rq0C6oolHOwfBvj3Lvti9owZDbDeFx3oIgB2fGmuCsTWWyJ/13/ytSsWVsvquAKNH2rdWXw8MqDg==",
+  "dgSpecHash": "LAE7FAUAsh74pd03DFKGPPOKhtDtlpnRbjC1k2q4Duba/HbR0tNKU+fswz9Z3ffUk8jBxlTWbTPc5WmEXrzKqw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Pedro Souza\\source\\repos\\tutorial-crud\\loja\\loja\\loja.csproj",
+  "projectFilePath": "C:\\Users\\Pedro Souza\\Source\\Repos\\tutorial-crud\\loja\\loja\\loja.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pedro Souza\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Pedro Souza\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
