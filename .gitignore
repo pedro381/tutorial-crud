@@ -1,7 +1,4 @@
 ﻿################################################################################
 # Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
 ################################################################################
-
-/loja/.vs/loja/FileContentIndex/4d41b7c9-a6bf-48f0-8d6a-8004731802da.vsidx
-/loja/.vs/loja/FileContentIndex/13bc1b5d-a607-4904-983f-4f9163d536f0.vsidx
-/loja/.vs/loja/FileContentIndex/10510eb6-18df-4e98-901d-13248b9cbd18.vsidx
+*.vsidx
