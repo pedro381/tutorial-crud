@@ -704,8 +704,9 @@ CREATE TABLE Professores (
 );
 
 INSERT INTO Professores (id, nome) VALUES 
-(1, 'Pedro'),
-(2, 'Tales Augusto');
+(1, 'Pedro Souza'),
+(2, 'Tales Augusto'),
+(3, 'Paulo Silva');
 ```
 
 ### b) Tabela Matérias
@@ -721,7 +722,8 @@ CREATE TABLE Materias (
 INSERT INTO Materias (id, nome, professor_id) VALUES 
 (1, 'HTML', 1),
 (2, 'SQL', 1),
-(3, 'Lógica de Programação', 2);
+(3, 'Lógica de Programação', 2),
+(4, 'Sistemas Operacionais', 3);
 ```
 
 ### c) Tabela Alunos
@@ -738,7 +740,8 @@ CREATE TABLE Alunos (
 INSERT INTO Alunos (id, nome, idade, endereco, telefone) VALUES 
 (1, 'João Silva', 20, 'Rua A, 123', '1111-1111'),
 (2, 'Maria Souza', 22, 'Rua B, 456', '2222-2222'),
-(3, 'Carlos Pereira', 19, 'Rua C, 789', '3333-3333');
+(3, 'Carlos Pereira', 19, 'Rua C, 789', '3333-3333'),
+(4, 'Raiane Miranda', 19, 'Rua D, 97', '4444-4444');
 ```
 
 ### d) Tabela Matrículas (Relação entre aluno e matéria)
