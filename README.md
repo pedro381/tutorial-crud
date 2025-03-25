@@ -2,31 +2,13 @@
 
 ## 1. Download e Instalação do SSMS
 
-1. **Acesse a Página de Download:**
+**Acesse a Página de Download:**
    - Visite a página oficial da Microsoft para baixar o SSMS:  
      [Download SSMS](https://aka.ms/ssmsfullsetup)
 
-2. **Baixe e Instale:**
-   - Clique no link de download e salve o instalador em seu computador.
-   - Execute o instalador e siga as instruções apresentadas na tela para concluir a instalação.
-
-> **Observação:** O SSMS é a ferramenta oficial para gerenciamento do SQL Server, permitindo criar, editar e gerenciar bancos de dados de forma intuitiva.
-
----
-
 ## 2. Configurando e Utilizando o LocalDB
 
-O LocalDB é uma versão leve do SQL Server Express, ideal para desenvolvimento e testes locais.
-
-### a) Instalação do LocalDB
-
-- **Instalação Automática:**  
-  Ao instalar o SQL Server Express, o LocalDB geralmente já é incluído.
-  
-- **Download Separado:**  
-  Se necessário, você pode baixar o SQL Server Express (que inclui o LocalDB) a partir do site da Microsoft.
-
-### b) Conectando ao LocalDB no SSMS
+### Conectando ao LocalDB no SSMS
 
 1. **Abrir o SSMS:**
    - Inicie o SQL Server Management Studio.
@@ -39,17 +21,6 @@ O LocalDB é uma versão leve do SQL Server Express, ideal para desenvolvimento 
      > **Dica:** O nome padrão da instância LocalDB é "MSSQLLocalDB". Se você tiver outras instâncias, utilize o nome correto conforme listado.
    
    - Selecione a opção de **Autenticação do Windows** (geralmente a padrão) e clique em **Conectar**.
-
-### c) Verificando Instâncias do LocalDB
-
-Para confirmar as instâncias disponíveis do LocalDB, abra o **Prompt de Comando** e execute:
-
-```bash
-sqllocaldb info
-```
-
-Isso exibirá todas as instâncias instaladas, permitindo verificar o nome padrão e outras instâncias, se houver.
-
 ---
 
 # Exemplo Básico de SQL: Escola e Tabela Alunos
