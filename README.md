@@ -2,6 +2,9 @@
 
 ## 1. Download e Instalação do SSMS
 
+[Assista no YouTube](https://www.youtube.com/watch?v=mhWLsilhpsM)
+
+
 **Acesse a Página de Download:**
    - Visite a página oficial da Microsoft para baixar o SSMS:  
      [Download SSMS](https://aka.ms/ssmsfullsetup)
