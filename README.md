@@ -167,9 +167,9 @@ ALTER COLUMN nome VARCHAR(150) NOT NULL;
 Após as alterações, insira alguns registros na tabela:
 
 ```sql
-INSERT INTO alunos (nome, idade, endereco, telefone)
-VALUES ('Ana Silva', 22, 'Rua das Flores, 123', '11987654321'),
-       ('Bruno Souza', 19, 'Av. Paulista, 456', '11912345678');
+INSERT INTO alunos (id, nome, idade, endereco, telefone)
+VALUES (1, 'Ana Silva', 22, 'Rua das Flores, 123', '11987654321'),
+       (2, 'Bruno Souza', 19, 'Av. Paulista, 456', '11912345678');
 ```
 
 > **Descrição:** Insere dois registros na tabela **alunos** com os campos `nome`, `idade`, `endereco` e `telefone`.
