@@ -67,7 +67,7 @@ Dentro do banco de dados "Escola", crie a tabela **alunos**:
 
 ```sql
 CREATE TABLE alunos (
-    id INT PRIMARY KEY AUTO_INCREMENT,
+    id INT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     idade INT,
     email VARCHAR(100)
