@@ -102,7 +102,7 @@ Para praticar e executar os comandos na ordem correta, siga os passos abaixo:
    Execute o comando:
    ```sql
    CREATE TABLE alunos (
-       id INT PRIMARY KEY AUTO_INCREMENT,
+       id INT PRIMARY KEY,
        nome VARCHAR(100) NOT NULL,
        idade INT,
        email VARCHAR(100)
