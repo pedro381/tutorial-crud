@@ -1,70 +1,31 @@
-# Instalação e Configuração do SQL Server Management Studio (SSMS) e LocalDB
+# SQLiteStudio - Guia de Instalação
 
-## 1. Download e Instalação do SSMS
+SQLiteStudio é uma ferramenta gráfica avançada e gratuita para gerenciar bancos de dados SQLite.
 
-[Assista no YouTube](https://www.youtube.com/watch?v=mhWLsilhpsM)
+## Passo a Passo para Instalação
 
+1. Acesse o site oficial: [https://sqlitestudio.pl/](https://github.com/pawelsalawa/sqlitestudio/releases)
+2. Vá até a seção de **Download** e escolha a versão para Windows (`.zip` ou `.exe`).
+3. Se baixou o arquivo **.exe**, basta executá-lo e seguir as instruções do instalador.
+4. Se baixou o **.zip**, extraia os arquivos para uma pasta de sua preferência e execute `SQLiteStudio.exe`.
 
-**Acesse a Página de Download:**
-   - Visite a página oficial da Microsoft para baixar o SSMS:  
-     [Download SSMS](https://aka.ms/ssmsfullsetup)
+---
 
-## 2. Configurando e Utilizando o LocalDB
+## Criar novo Banco de Dados
 
-### Conectando ao LocalDB no SSMS
+![Novo Banco](https://raw.githubusercontent.com/pedro381/tutorial-crud/refs/heads/main/img/1.png)
+![Novo Banco](https://raw.githubusercontent.com/pedro381/tutorial-crud/refs/heads/main/img/2.png)
+![Novo Banco](https://raw.githubusercontent.com/pedro381/tutorial-crud/refs/heads/main/img/3.png)
+![Novo Banco](https://raw.githubusercontent.com/pedro381/tutorial-crud/refs/heads/main/img/4.png)
+![Novo Banco](https://raw.githubusercontent.com/pedro381/tutorial-crud/refs/heads/main/img/5.png)
+![Novo Banco](https://raw.githubusercontent.com/pedro381/tutorial-crud/refs/heads/main/img/6.png)
+![Novo Banco](https://raw.githubusercontent.com/pedro381/tutorial-crud/refs/heads/main/img/7.png)
 
-1. **Abrir o SSMS:**
-   - Inicie o SQL Server Management Studio.
-
-2. **Conectar à Instância LocalDB:**
-   - Na janela de conexão, preencha o campo **Nome do servidor** com:
-     ```
-     (localdb)\MSSQLLocalDB
-     ```
-     > **Dica:** O nome padrão da instância LocalDB é "MSSQLLocalDB". Se você tiver outras instâncias, utilize o nome correto conforme listado.
-   
-   - Selecione a opção de **Autenticação do Windows** (geralmente a padrão) e clique em **Conectar**.
 ---
 
 # Exemplo Básico de SQL: Escola e Tabela Alunos
 
-## 1. Criar o Banco de Dados
-
-Primeiro, criamos o banco de dados chamado **Escola**:
-
-```sql
-CREATE DATABASE Escola;
-```
-
-> **Descrição:** Cria o banco de dados "Escola" onde serão armazenadas as tabelas.
-
----
-
-## 2. Deletar o Banco de Dados
-
-Caso seja necessário remover o banco de dados, use o comando:
-
-```sql
-DROP DATABASE Escola;
-```
-
-> **Descrição:** Remove completamente o banco de dados "Escola" e todas as tabelas e dados que ele contém.
-
----
-
-## 3. Usar o Banco de Dados
-
-Para começar a trabalhar com o banco de dados criado, é preciso selecioná-lo:
-
-```sql
-USE Escola;
-```
-
-> **Descrição:** Seleciona o banco de dados "Escola" para que os comandos subsequentes sejam executados nele.
-
----
-
-## 4. Criar a Tabela Alunos
+## Criar a Tabela Alunos
 
 Dentro do banco de dados "Escola", crie a tabela **alunos**:
 
@@ -82,41 +43,6 @@ CREATE TABLE alunos (
 > - `nome`: nome do aluno (não pode ser nulo);
 > - `idade`: idade do aluno;
 > - `email`: email do aluno.
-
----
-
-## Sequência de Execução dos Comandos
-
-Para praticar e executar os comandos na ordem correta, siga os passos abaixo:
-
-1. **Criar o Banco de Dados:**  
-   Execute o comando:
-   ```sql
-   CREATE DATABASE Escola;
-   ```
-   
-2. **Selecionar o Banco de Dados:**  
-   Execute o comando:
-   ```sql
-   USE Escola;
-   ```
-
-3. **Criar a Tabela Alunos:**  
-   Execute o comando:
-   ```sql
-   CREATE TABLE alunos (
-       id INT PRIMARY KEY,
-       nome VARCHAR(100) NOT NULL,
-       idade INT,
-       email VARCHAR(100)
-   );
-   ```
-   
-4. **(Opcional) Deletar o Banco de Dados:**  
-   Se precisar remover o banco de dados e todos os dados, execute:
-   ```sql
-   DROP DATABASE Escola;
-   ```
 
 ---
 
