@@ -54,8 +54,9 @@ Adicione, por exemplo, os campos **endereco** e **telefone**:
 
 ```sql
 ALTER TABLE alunos
-ADD endereco VARCHAR(200),
-    telefone VARCHAR(20);
+ADD endereco VARCHAR(200);
+ALTER TABLE alunos
+ADD telefone VARCHAR(20);
 ```
 
 > **Descrição:** Esse comando adiciona as colunas `endereco` e `telefone` à tabela **alunos**.
